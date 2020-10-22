@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-todo-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "pm2 start ./index.js --watch && pm2 logs index",
+    "prod": "pm2 start ./index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9"
+  }
+}
